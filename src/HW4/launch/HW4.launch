@@ -1,0 +1,8 @@
+<launch>
+    <arg name="val" value="6"/>
+        <node pkg="HW4" type="pow1" name="power"  output="screen" />
+        <node pkg="HW4" type="use1" name="user" args="$(arg val)" />
+
+     <node pkg="turtlesim" type="turtlesim_node" name="turtle_node" required="true" />
+     <node pkg="HW4" type="rand_run1" name="rand_node1" resquset="ture" />
+</launch>

@@ -1,0 +1,5 @@
+int32 input_req1
+float32 input_req2
+---
+int32 output_res1
+int32 output_res2
