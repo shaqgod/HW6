@@ -1,0 +1,17 @@
+<launch>
+    <rosparam command="load" file="$(find HW5)/config/turtle_color.yaml"/>
+    
+
+    <node pkg = "turtlesim" type = "turtlesim_node" name = "turtlesim">
+    </node>
+
+    <node pkg = "HW5" type = "rw_param" name = "rw_param1" output="screen">
+    </node>
+
+    <node pkg="HW5" type="rand_run3" name="random_node" resquired="ture" output="screen" >
+      <rosparam command="load" file="$(find HW5)/config/freq.yaml"/>
+    </node>
+
+</launch>
+
+

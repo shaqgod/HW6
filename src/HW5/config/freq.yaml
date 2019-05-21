@@ -1,0 +1,42 @@
+background_b: 0
+background_g: 0
+background_r: 0
+freq: 10
+rand_node:
+  background_b: 0
+  background_g: 0
+  background_r: 0
+  freq: 10
+  rand_node:
+    freq: 10
+    rosdistro: 'kinetic
+
+      '
+    roslaunch:
+      uris: {host_shaq_nitro_an515_51__40643: 'http://shaq-Nitro-AN515-51:40643/',
+        host_shaq_nitro_an515_51__45809: 'http://shaq-Nitro-AN515-51:45809/'}
+    rosversion: '1.12.14
+
+      '
+    run_id: b58206c6-6ff0-11e9-a734-9822ef7e6e31
+  rosdistro: 'kinetic
+
+    '
+  roslaunch:
+    uris: {host_shaq_nitro_an515_51__40643: 'http://shaq-Nitro-AN515-51:40643/', host_shaq_nitro_an515_51__43887: 'http://shaq-Nitro-AN515-51:43887/',
+      host_shaq_nitro_an515_51__45591: 'http://shaq-Nitro-AN515-51:45591/', host_shaq_nitro_an515_51__45809: 'http://shaq-Nitro-AN515-51:45809/'}
+  rosversion: '1.12.14
+
+    '
+  run_id: b58206c6-6ff0-11e9-a734-9822ef7e6e31
+rosdistro: 'kinetic
+
+  '
+roslaunch:
+  uris: {host_shaq_nitro_an515_51__39113: 'http://shaq-Nitro-AN515-51:39113/', host_shaq_nitro_an515_51__40643: 'http://shaq-Nitro-AN515-51:40643/',
+    host_shaq_nitro_an515_51__43887: 'http://shaq-Nitro-AN515-51:43887/', host_shaq_nitro_an515_51__45591: 'http://shaq-Nitro-AN515-51:45591/',
+    host_shaq_nitro_an515_51__45809: 'http://shaq-Nitro-AN515-51:45809/'}
+rosversion: '1.12.14
+
+  '
+run_id: b58206c6-6ff0-11e9-a734-9822ef7e6e31
