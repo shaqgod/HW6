@@ -1,0 +1,31 @@
+<launch>
+
+    <arg name="turtle_id1" default="narmal_turtle"/>
+    <arg name="turtle_id2" default="reverse_turtle"/>
+    
+    <node pkg = "turtlesim"  type = "turtle_teleop_key"  name = "teleop_key"  respawn = "true" >
+        <!-- <remap from="/turtle1/cmd_vel"  	  to="/turtle_$(arg turtle_id1)/turtle1/cmd_vel"	/> -->
+    </node> 
+
+    <node pkg = "HW3"  type = "rev_turtle"  name = "rev_cmd_node"  respawn = "true" >
+        <!-- <remap from="/turtle1/cmd_vel"  	  to="/turtle_$(arg turtle_id1)/turtle1/cmd_vel"	/> -->
+    </node>
+
+
+    <!-- <node pkg = "turtle_control"  type = "get_turtle_fb"  name = "get_turtle_fb_$(arg turtle_id)"  respawn = "true"     >
+        <remap from="/turtle1/cmd_vel"  	  to="/turtle_$(arg turtle_id)/turtle1/cmd_vel"	/>
+    </node> -->
+
+    <!-- respawn and required cannot both be set to true.  -->
+    <node  pkg = "turtlesim"  type = "turtlesim_node"  name = "$(arg turtle_id1)"  required = "true"     >
+        <!-- <remap from="/turtle1/cmd_vel"  	  to="/turtle_$(arg turtle_id1)/turtle1/cmd_vel"	/> -->
+    </node>
+    
+    <node  pkg = "turtlesim"  type = "turtlesim_node"  name = "$(arg turtle_id2)"  required = "true"     >
+        <remap from="/turtle1/cmd_vel"  	  to="/turtle1/rev_cmd"	/>
+    </node>
+
+
+</launch>
+
+
